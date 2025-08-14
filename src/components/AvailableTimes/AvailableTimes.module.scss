@@ -1,0 +1,6 @@
+.times {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 24px;
+  grid-gap: 12px;
+}

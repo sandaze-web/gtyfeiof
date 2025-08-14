@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.title {
+  font-size: var(--fz-title);
+  font-weight: 700;
+}
+.content {
+  line-height: 140%;
+}
+.infoBx {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phoneBx {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+

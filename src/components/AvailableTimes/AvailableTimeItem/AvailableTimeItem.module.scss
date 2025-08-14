@@ -1,0 +1,15 @@
+.item {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  margin: -0.5px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color-main);
+  transition: .4s;
+  &.selected {
+    background: #32358F;
+    border: 1px solid #595FFF;
+  }
+}

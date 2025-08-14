@@ -1,0 +1,15 @@
+@mixin includeFont($fontName, $fileName, $weight, $style) {
+  @font-face{
+    font-family: $fontName;
+    font-display: swap;
+    src: url('../../fonts/#{$fileName}.woff2') format("woff2"), url("../../fonts/#{$fileName}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@include includeFont('Nunito', 'Nunito-Black', '900', 'normal');
+@include includeFont('Nunito', 'Nunito-Bold', '700', 'normal');
+@include includeFont('Nunito', 'Nunito-ExtraBold', '800', 'normal');
+@include includeFont('Nunito', 'Nunito-Medium', '500', 'normal');
+@include includeFont('Nunito', 'Nunito-Regular', '400', 'normal');

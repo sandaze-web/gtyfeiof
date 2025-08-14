@@ -1,0 +1,46 @@
+.sliderWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.progressContainer {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 3;
+}
+
+.progressBar {
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  border-radius: 2px;
+
+  .progressFill {
+    height: 100%;
+    width: 0%;
+    background: #fff;
+  }
+
+  &.active .progressFill {
+    animation: fillBar 5s linear forwards;
+  }
+
+  &.full .progressFill {
+    width: 100%;
+  }
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

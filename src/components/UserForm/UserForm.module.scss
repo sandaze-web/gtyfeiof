@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & input, & textarea {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color-main);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    transition: .4s;
+    &::placeholder {
+      color: var(--text-grey);
+    }
+    &:focus {
+      border-color: rgba(#fff, .3)
+    }
+  }
+  & textarea {
+    resize: none;
+    height: 90px;
+  }
+}
+.promo {
+  position: relative;
+  display: flex;
+  & input {
+    width: 100%;
+  }
+  & button {
+    position: absolute;
+    background-color: transparent;
+    right: 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    height: 100%;
+  }
+}

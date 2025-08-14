@@ -1,0 +1,14 @@
+.homeInner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.slider {
+  position: relative;
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 295px;
+}

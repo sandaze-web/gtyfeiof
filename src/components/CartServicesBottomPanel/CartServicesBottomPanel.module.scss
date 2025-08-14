@@ -1,0 +1,50 @@
+.cartPanel {
+  transition: .2s;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--bg-secondary);
+  z-index: 20;
+  padding: 16px 16px 80px;
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.counts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  & div {
+    color: var(--text-grey);
+  }
+  & .separator {
+    width: 2px;
+    height: 15px;
+    background-color: var(--text-grey);
+  }
+}
+.price {
+  font-weight: 700;
+  font-size: 18px;
+}
+.priceBx {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+.clearCart {
+  color: var(--text-grey);
+  font-size: 16px;
+  background-color: transparent;
+}

@@ -1,0 +1,111 @@
+.calendarWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.swiperContainer {
+  flex-grow: 1;
+  width: calc(100% - 56px);
+  margin-right: -16px;
+  padding-right: 16px;
+}
+.iconButton {
+  font-size: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #494949;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  & path {
+    transition: .4s;
+  }
+  &.iconButtonActive {
+    background-color: var(--bg-accent);
+    border-color: transparent;
+    & path {
+      stroke: #fff;
+    }
+  }
+}
+
+.slide {
+  width: auto !important;
+}
+
+.dateRow {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+}
+.dayBx {
+  display: flex;
+  align-items: center;
+}
+.dateButton {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #494949;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  outline: none;
+  transition: .4s;
+  position: relative;
+}
+.day {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  padding-right: 4px;
+  transition: .4s;
+}
+
+.dateButton .weekday {
+  text-transform: uppercase;
+  font-family: var(--font-second);
+  margin-top: -2px;
+  font-weight: 600;
+  transition: .4s;
+}
+.month {
+  margin-top: -3px;
+  transition: .4s;
+}
+
+.active {
+  background-color: var(--bg-accent);
+  color: white;
+  border-color: transparent;
+  & div {
+    color: #fff;
+  }
+}
+
+.moreButton {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #494949;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-grey);
+  font-weight: 700;
+}
+.fullMobileCalendar {
+  margin-top: 16px;
+  transition: .4s;
+}

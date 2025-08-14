@@ -1,0 +1,29 @@
+
+
+:root {
+  //colors
+  --accent-color: #595FFF;
+
+  //borders
+  --border-color-main: rgba(255, 255, 255, 0.051);
+
+  //text colors
+  --text-main: #ffffff;
+  --text-secondary: #708499;
+  --text-grey: #708499;
+
+  //bg
+  --bg-primary: #000;
+  --bg-secondary: #141414;
+  --bg-accent: var(--accent-color);
+
+  //font-sizes
+  --fz-title-page: 21px;
+  --fz-title: 18px;
+
+  --fz-text: 16px;
+
+  //fonts
+  --ff-main: 'Nunito', sans-serif;
+  --ff-secondary: 'Inter', sans-serif;
+}

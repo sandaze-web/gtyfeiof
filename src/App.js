@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import AppRouter from "./components/AppRouter/AppRouter";
+import {useClearButtonOnRoutes} from "./hooks/useClearButtonOnRoutes";
+import {ROUTE_CATEGORY, ROUTE_CONFIRM_PHONE} from "./utils/const/routesConst";
+import {useToggleShowBottomPanel} from "./hooks/useToggleShowBottomPanel";
+import ProtectedRouter from "./components/ProtectedRouter/ProtectedRouter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    //убираем кнопку в зависимости от роута для bfcache (back-forward cache)
+    useClearButtonOnRoutes([ROUTE_CATEGORY])
+
+    //убираем нижнюю панель зависимости от роута для bfcache (back-forward cache)
+    useToggleShowBottomPanel([ROUTE_CONFIRM_PHONE])
+
+    return  <AppRouter />
 }
-
 export default App;
