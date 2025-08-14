@@ -17,7 +17,7 @@ const App = () => {
     useEffect(() => {
         tg.expand()
         tg.ready()
-        tg.isFullscreen = true
+        tg.requestFullscreen()
     }, []);
 
     return  <AppRouter />
