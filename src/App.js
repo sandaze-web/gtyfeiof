@@ -2,7 +2,6 @@ import AppRouter from "./components/AppRouter/AppRouter";
 import {useClearButtonOnRoutes} from "./hooks/useClearButtonOnRoutes";
 import {ROUTE_CATEGORY, ROUTE_CONFIRM_PHONE} from "./utils/const/routesConst";
 import {useToggleShowBottomPanel} from "./hooks/useToggleShowBottomPanel";
-import ProtectedRouter from "./components/ProtectedRouter/ProtectedRouter";
 import {useTelegram} from "./hooks/useTelegram";
 import {useEffect} from "react";
 

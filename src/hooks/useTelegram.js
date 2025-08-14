@@ -1,4 +1,4 @@
-const tg = window.TelegramIcon.WebApp
+const tg = window?.Telegram?.WebApp
 
 export function useTelegram () {
     const onClose = () => {
